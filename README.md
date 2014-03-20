@@ -16,10 +16,3 @@ runna mongodb
 runna nodemon server.js
 
 mongo
-use admin
- db.addUser("einaralex", "alexander"); 
-
-    "user" : "einaralex",
-    "readOnly" : false,
-    "pwd" : "bc51072d66d63e8649635da8e781da2f",
-    "_id" : ObjectId("532afeea7fd351a140129ccc")
