@@ -1,18 +1,28 @@
-npm install
-brew install mongodb
+Hey Ingz, getur verið að þú hafir verið að reyna að installa sama pakka aftur?
+Ég fékk allavega sömu villu þannig. ANywho, held þetta virki, ég testa á hinni tölvunni minni á morgun.
 
-ubuntu
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-sudo apt-get update
+Þarft líklegast að gera npm install til þess að fá karma-jasmine pakkann
 
-mongod
-$ sudo mkdir -p /data/db/
-$ sudo chown `id -u` /data/db
+**`grunt watch`** (í staðin fyrir **karma start**)
+
+Grunt watch keyrir fyrir þig **Karma**, Jshint, Uglify og Concat í hvert einasta skipti sem thu gerir breytingar. Eg stillti á PhantomJS browser thví tha opnast enginn gluggi fyrir Karma í hvert skipti.
 
 
-installa nodemon
+`npm install` til að installa þeim dependencies sem eru í package.json (node_modules/)
 
-runna mongodb
-runna nodemon server.js
+`bower install` til að installa þeim dependencies sem eru í bower.json (bower_components/)
 
-mongo
+
+===
+
+
+1) npm install
+2) bower install *
+ - angular
+ - angular-route
+ - angular-mocks
+ - jquery
+ - bootstrap
+
+to run tests: karma start 
+to run client: run.bat / python -m SimpleHTTPServer 8080
