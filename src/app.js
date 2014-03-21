@@ -5,7 +5,8 @@ var app = angular.module("cpaApp", ["ngRoute"]);
 app.config(function($routeProvider) {
 	$routeProvider.when("/", {
 		templateUrl: "templates/home.html",
-		controller: "HomeController"
+		controller: "HomeController",
+		title: 'testing'
 	}).when("/login", {
 		templateUrl: "templates/login.html",
 		controller: "LoginController"
