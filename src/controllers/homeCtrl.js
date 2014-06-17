@@ -2,8 +2,9 @@ app.controller("HomeController", [
 	"$scope", "HomeFactory",
 	function($scope, HomeFactory) {
 		
-		$scope.getLinks = function(){
+		console.log("Console log !!!");
 
+		$scope.getLinks = function(){
 			HomeFactory.links();
 		};
 	}

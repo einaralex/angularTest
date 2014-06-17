@@ -46,6 +46,7 @@ module.exports = function(grunt) {
 			},
 			connect: {
 				server: {
+					tasks: ['jshint', 'concat', 'uglify'], 
 					options: {
 						port: 8090,
 						keepalive: true,
@@ -63,6 +64,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task(s).
-	grunt.registerTask('default', ['jshint', 'uglify', 'concat', 'connect']);
-
+	grunt.registerTask('default', ['jshint', 'uglify', 'concat']);
 };
