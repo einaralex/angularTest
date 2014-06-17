@@ -5,7 +5,7 @@ app.controller("HomeController", [
 		$scope.getLinks = function(){
 
 			HomeFactory.links();
-		}
+		};
 	}
 ]);
 

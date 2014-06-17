@@ -1,4 +1,4 @@
-var app = angular.module("cpaApp", ["ngRoute"]);
+var app = angular.module("myApp", ["ngRoute"]);
 
 
 
@@ -10,13 +10,6 @@ app.config(function($routeProvider) {
 	}).when("/login", {
 		templateUrl: "templates/login.html",
 		controller: "LoginController"
-	}).when("/adminHome", {
-		templateUrl: "templates/adminHome.html",
-		controller: "LoginController"
-	}).otherwise({ redirectTo: "/"});
+	});
+	//.otherwise({ redirectTo: "/"});
 });
-
-
-		/*}).when("/evaluation/:evaluationID", {
-		templateUrl: "templates/evaluationtemplate.html",
-		controller: "EvalTempController"*/
