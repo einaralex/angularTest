@@ -1,18 +1,10 @@
 app.controller("HomeController", [
 	"$scope", "HomeFactory",
 	function($scope, HomeFactory) {
-		
-		console.log("Console log !!!");
 
-		$scope.getLinks = function(){
-			HomeFactory.links();
-		};
+		$scope.users = ['John', 'James', 'Jake'];
+
+		console.log(HomeFactory.links());
+
 	}
 ]);
-
-function createLink(url, name){
-	return {
-		URL: url,
-		Name: name
-	};
-}
